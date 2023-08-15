@@ -140,7 +140,9 @@ func checkProxyList() {
 			go func() {
 				valid, timeOut := checkProxy(proxyList.Get(index).(string))
 				if proxyList.Get(index) != nil && (!valid || timeOut > 1) {
-					invalid <- proxyList.Get(index).(string)
+					if val, ok := proxyList.Get(index).(string); ok {
+						invalid <- val
+					}
 				}
 			}()
 		}
