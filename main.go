@@ -1,4 +1,3 @@
-// superproxy project superproxy.go
 package main
 
 import (
