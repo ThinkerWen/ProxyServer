@@ -162,11 +162,10 @@ func main() {
 
 	//启动代理更新线程
 	go updateProxyList()
-	//updateUpstreamProxy()
 	go checkProxyList()
 	go removeProxy()
 
-	listener, err := net.Listen("tcp", ":12001")
+	listener, err := net.Listen("tcp", ":12315")
 	if err != nil {
 		log.Fatalf("Failed to setup listener: %v", err)
 	}
