@@ -1,0 +1,10 @@
+{
+  "bind_ip": "",
+  "bind_port": 12315,
+  "proxy_max_retry": 10,
+  "proxy_expire_time": 50,
+  "proxy_pool_length": 50,
+  "proxy_connect_time_out": 1,
+  "check_proxy_time_period": 10,
+  "refresh_proxy_time_period": 10
+}
